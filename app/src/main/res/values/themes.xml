@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.PlayJuegos" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="colorPrimary">#E63B51</item>
+        <item name="colorPrimaryDark">#8E0437</item>
+        <item name="colorAccent">@color/teal_200</item>
+    </style>
+
+</resources>

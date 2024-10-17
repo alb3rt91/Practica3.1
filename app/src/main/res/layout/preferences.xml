@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="16dp"
+            android:text="Elige una opción:"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rg_games"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_angry_birds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Angry Birds" />
+
+            <RadioButton
+                android:id="@+id/rb_dragon_fly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dragon fly" />
+
+            <RadioButton
+                android:id="@+id/rb_hill_climbing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hill climbing racing" />
+
+            <RadioButton
+                android:id="@+id/rb_pocket_soccer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pocket soccer" />
+
+            <RadioButton
+                android:id="@+id/rb_radiant_defense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Radiant defense" />
+        </RadioGroup>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rg_games"
+            android:layout_marginTop="16dp"
+            android:max="5" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:numStars="5"
+            android:stepSize="1.0" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@android:drawable/ic_menu_send"
+            app:backgroundTint="@color/teal_200" />
+
+    </RelativeLayout>
+</LinearLayout>

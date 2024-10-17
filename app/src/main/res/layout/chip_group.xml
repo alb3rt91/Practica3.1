@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Contenedor principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título de las plataformas -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plataformas:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <!-- ChipGroup para plataformas -->
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupPlatforms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleSelection="false"
+            app:chipSpacing="8dp">
+
+            <!-- Chips de plataformas -->
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_ps4"
+                style="@style/Widget.MaterialComponents.Chip.Entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PS4"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_pc"
+                style="@style/Widget.MaterialComponents.Chip.Entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PC"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_xbox"
+                style="@style/Widget.MaterialComponents.Chip.Entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XBOX"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_wii"
+                style="@style/Widget.MaterialComponents.Chip.Entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WII"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_wiiu"
+                style="@style/Widget.MaterialComponents.Chip.Entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WIIU"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_3ds"
+                style="@style/Widget.MaterialComponents.Chip.Entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3DS"
+                android:textAppearance="?android:textAppearanceMedium"/>
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_x360"
+                style="@style/Widget.MaterialComponents.Chip.Entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X360"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <!-- Título de los géneros -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Géneros:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <!-- ScrollView para géneros -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Lista de géneros con TextView y divisores -->
+                <TextView
+                    android:id="@+id/genero_accion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Acción"
+                    android:paddingBottom="8dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CCCCCC" />
+
+                <TextView
+                    android:id="@+id/genero_aventura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aventura"
+                    android:paddingBottom="8dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CCCCCC" />
+
+                <TextView
+                    android:id="@+id/genero_deportes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deportes"
+                    android:paddingBottom="8dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CCCCCC" />
+
+                <TextView
+                    android:id="@+id/genero_disparos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disparos"
+                    android:paddingBottom="8dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CCCCCC" />
+
+                <TextView
+                    android:id="@+id/genero_estrategia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estrategia"
+                    android:paddingBottom="8dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CCCCCC" />
+
+                <TextView
+                    android:id="@+id/genero_lucha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lucha"
+                    android:paddingBottom="8dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CCCCCC" />
+
+                <TextView
+                    android:id="@+id/genero_musical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Musical"
+                    android:paddingBottom="8dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CCCCCC" />
+
+                <TextView
+                    android:id="@+id/genero_rol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rol"
+                    android:paddingBottom="8dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CCCCCC" />
+
+                <TextView
+                    android:id="@+id/genero_simulacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Simulacion"
+                    android:paddingBottom="8dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CCCCCC" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- BottomAppBar -->
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/red"
+        app:fabCradleMargin="16dp"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:fabCradleVerticalOffset="10dp"
+        app:navigationIcon="@drawable/ic_menu"
+        app:menu="@menu/bottom_appbar_menu" />
+
+    <!-- FloatingActionButton -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:contentDescription="Add item"
+        android:scaleType="center"
+        android:elevation="8dp"
+        app:backgroundTint="@color/teal_200"
+        app:srcCompat="@drawable/ic_add"
+        app:layout_anchor="@id/bottomAppBar"
+        app:layout_anchorGravity="center" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
